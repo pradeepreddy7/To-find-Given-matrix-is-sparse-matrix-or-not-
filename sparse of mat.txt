@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[10][10],n,d=0,c=0,i,j;
+    printf("enter size");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+		scanf("%d",&a[i][j]);
+	}
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+		if(a[i][j]==0)
+		c++;
+		else
+		d++;
+	}
+	}
+	if(c>=d)
+	printf("sparse");
+	else
+	printf("NOt sparse");
+	return 0;
+}
